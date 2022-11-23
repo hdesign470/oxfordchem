@@ -1,0 +1,132 @@
+* {
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 11vh;
+}
+.navbar {
+    height: 12vh;
+    background-color: #FFF8EA !important;
+}
+
+#navcol-1 {
+    background-color: #FFF8EA !important;
+}
+
+body {
+    margin-top: 12vh;
+    margin-bottom: 2rem;
+}
+.navbar .fa-bars {
+    color: rgb(94, 94, 255);
+    border-color: rgb(94, 94, 255);
+    padding: 1rem;
+    border-width: 2px;
+    border-radius: 15px;
+}
+#myabout {
+    min-height: 65vh;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background: rgb(173, 46, 18, 0.8);
+}
+#myabout::before {
+    content: '';
+    background: url('assets/images/lab.png') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#myabout img {
+    width: 15rem;
+}
+#myvisimisi {
+    min-height: 65vh;
+}
+#myres {
+    min-height: 65vh;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background: rgba(23, 30, 138, 0.8);
+}
+
+#myres::before {
+    content: '';
+    background: url('assets/images/factory.png') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+#myproduct {
+    min-height: 65vh;
+}
+#mycontactus {
+    min-height: 65vh;
+    background: rgba(173, 46, 18, 0.822);
+}
+
+#mymapembed {
+    height: 35vh;
+}
+#certcarouselControls img {
+    margin: auto;
+}
+#mycust {
+    min-height: 65vh;
+}
+.mySwiper {
+    max-width: 50vh;
+}
+.swiper-wrapper {
+    align-items: center;
+    align-content: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
+#mytable .table {
+    table-layout: fixed;
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    #mytable .table {
+        table-layout: fixed;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    #myproductnav *{
+        font-size: 0.8rem; 
+    }
+}
+footer {
+    font-size: 1rem;
+}
+@media only screen and (max-width: 1200px) {
+    footer {
+        font-size: 0.75rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    footer {
+        font-size: 0.5rem;
+    }
+}
