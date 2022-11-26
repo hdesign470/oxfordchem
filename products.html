@@ -23,6 +23,10 @@
         integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="mystyle.css" />
+    <!-- ////////////////////////////////// -->
+    <!-- ////////  DESIGN BY HENRI //////// -->
+    <!-- //// office.henri470@gmail.com /// -->
+    <!-- ////////////////////////////////// -->
 </head>
 
 <body>
@@ -47,23 +51,48 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-black text-nowrap text-center" href="index.html#mycontactus">
-                        Contact Us
+                    <a class="nav-link text-black text-nowrap text-center" href="#">
+                        <strong>Product</strong>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-black text-nowrap text-center" href="#">
-                        <strong>Product</strong>
+                    <a class="nav-link text-black text-nowrap text-center" href="index.html#mycontactus">
+                        Contact Us
                     </a>
                 </li>
             </ul>
         </div>
     </nav>
     <main>
-        <div class="py-2 my-2" id="myproductnav">
+        <div id="accordion-image">
+            <div class="accordion accordion-flush" id="accordionExample2">
+                <div class="accordion-item">
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body m-0 p-0">
+                            <img src="assets/images/accordion/bhotel.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body m-0 p-0">
+                            <img src="assets/images/accordion/bkitchen.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body m-0 p-0">
+                            <img src="assets/images/accordion/blaundry.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-2 my-2 container" id="myproductnav">
             <div class="d-flex btn-group mx-2" role="group" aria-label="Basic radio toggle button group">
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked
-                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                     aria-controls="collapseOne">
                 <label class="btn btn-outline-primary d-flex justify-content-center" for="btnradio1">
                     <span class="d-none d-sm-flex align-items-center">Housekeeping</span>
@@ -460,11 +489,6 @@
             <div class="row">
                 <div class="col text-start d-flex justify-content-start align-items-center">
                     <span class="">Copyright © 2022 Bintang Duta Bersaudara. All rights reserved.</span>
-                </div>
-                <div class="col text-center d-flex justify-content-center align-items-center">
-                    <a href="mailto:office.henri470@gmail.com" class="nav-link">
-                        <span class="h-100 d-flex justify-content-center align-items-center">Made by Henri</span>
-                    </a>
                 </div>
                 <div class="col text-end d-flex justify-content-end align-items-center">
                     <a href="#" class="nav-link">

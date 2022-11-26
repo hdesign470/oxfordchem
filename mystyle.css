@@ -4,13 +4,26 @@
     margin: 0;
     outline: none;
 }
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 11vh;
 }
+
+.navbar-toggler {
+    position: fixed;
+    top: 1rem;
+    right: 0.2rem;
+}
+
 .navbar {
     height: 12vh;
     background-color: #FFF8EA !important;
+}
+
+.navbar h1 {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #navcol-1 {
@@ -21,6 +34,7 @@ body {
     margin-top: 12vh;
     margin-bottom: 2rem;
 }
+
 .navbar .fa-bars {
     color: rgb(94, 94, 255);
     border-color: rgb(94, 94, 255);
@@ -28,13 +42,15 @@ body {
     border-width: 2px;
     border-radius: 15px;
 }
+
 #myabout {
     min-height: 65vh;
     position: relative;
     z-index: 1;
     overflow: hidden;
-    background: rgb(173, 46, 18, 0.8);
+    background: rgba(23, 30, 138, 0.8);
 }
+
 #myabout::before {
     content: '';
     background: url('assets/images/lab.png') no-repeat center center;
@@ -51,9 +67,11 @@ body {
 #myabout img {
     width: 15rem;
 }
+
 #myvisimisi {
     min-height: 65vh;
 }
+
 #myres {
     min-height: 65vh;
     position: relative;
@@ -74,59 +92,136 @@ body {
     z-index: -1;
     opacity: 0.2;
 }
+
 #myproduct {
     min-height: 65vh;
 }
+
 #mycontactus {
     min-height: 65vh;
-    background: rgba(173, 46, 18, 0.822);
+    /* background: rgba(173, 46, 18, 0.822); */
+    background: rgba(23, 30, 138, 0.8);
+}
+
+#mycontactus a {
+    text-decoration: none;
+    color: white;
+}
+
+#myqrcode {
+    position: absolute;
+    width: 35%;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+@media only screen and (max-width: 991px) {
+    #myqrcode {
+        position: static;
+        width: 75%;
+        padding-top: 2em;
+    }
 }
 
 #mymapembed {
-    height: 35vh;
+    min-height: 35vh;
 }
+
 #certcarouselControls img {
     margin: auto;
 }
+
 #mycust {
     min-height: 65vh;
 }
+
 .mySwiper {
     max-width: 50vh;
 }
+
 .swiper-wrapper {
     align-items: center;
     align-content: center;
 }
+
 .swiper-slide img {
     display: block;
     width: 100%;
     object-fit: contain;
 }
+
 #mytable .table {
     table-layout: fixed;
     width: 100%;
 }
-@media only screen and (max-width: 768px) {
+
+/*     FOR ACCORDION IMAGE */
+/* :root {
+    --height: 50vh;
+    --width: 100vw;
+    --m-height: 18vh;
+} */
+
+
+#accordion-image * {
+    /* background-color: #FFF8EA; */
+    border-style: none;
+}
+
+#accordion-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 60vh;
+
+    overflow: hidden;
+}
+
+#accordion-image .accordion-item img {
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    margin: auto;
+}
+
+#myproductnav {
+    display: block;
+}
+@media only screen and (max-width: 950px) {
     #mytable .table {
         table-layout: fixed;
         width: 100%;
         font-size: 0.8rem;
     }
-    #myproductnav *{
-        font-size: 0.8rem; 
+
+    #myproductnav * {
+        font-size: 0.8rem;
+    }
+
+    #accordion-image {
+        height: 15vh;
     }
 }
+
 footer {
     font-size: 1rem;
 }
+
 @media only screen and (max-width: 1200px) {
     footer {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
 }
+
 @media only screen and (max-width: 768px) {
     footer {
-        font-size: 0.5rem;
+        font-size: 0.75rem;
     }
 }
