@@ -162,16 +162,7 @@ body {
     width: 100%;
 }
 
-/*     FOR ACCORDION IMAGE */
-/* :root {
-    --height: 50vh;
-    --width: 100vw;
-    --m-height: 18vh;
-} */
-
-
 #accordion-image * {
-    /* background-color: #FFF8EA; */
     border-style: none;
 }
 
