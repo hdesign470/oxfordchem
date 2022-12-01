@@ -12,8 +12,8 @@ html {
 
 .navbar-toggler {
     position: fixed;
-    top: 0.4rem;
-    right: 0.2rem;
+    top: 2%;
+    right: 2%;
 }
 
 .navbar {
