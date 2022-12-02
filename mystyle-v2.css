@@ -1,0 +1,263 @@
+* {
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 11vh;
+}
+
+.navbar-toggler {
+    position: fixed;
+    right: 2%;
+}
+
+.navbar {
+    height: 12vh;
+    background-color: #FFF8EA !important;
+}
+
+.navbar h1 {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media only screen and (max-width: 345px) {
+    .navbar h1 {
+        display: none;
+    }
+}
+
+#navcol-1 {
+    background-color: #FFF8EA !important;
+}
+
+body {
+    margin-top: 12vh;
+    margin-bottom: 2rem;
+}
+
+.navbar .fa-bars {
+    color: rgb(94, 94, 255);
+    border-color: rgb(94, 94, 255);
+    padding: 1rem;
+    border-width: 2px;
+    border-radius: 15px;
+}
+
+#myabout {
+    min-height: 65vh;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background: rgba(23, 30, 138, 0.8);
+}
+
+#myabout::before {
+    content: '';
+    background: url('https://cdn.statically.io/gh/hdesign470/oxfordchem/main/assets/images/lab.jpg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#myabout img {
+    width: 15rem;
+}
+
+#myvisimisi {
+    min-height: 65vh;
+}
+
+#myres {
+    min-height: 65vh;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background: rgba(23, 30, 138, 0.8);
+}
+
+#myres::before {
+    content: '';
+    background: url('https://cdn.statically.io/gh/hdesign470/oxfordchem/main/assets/images/factory.jpg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#myproduct {
+    min-height: 65vh;
+}
+
+#mycontactus {
+    min-height: 65vh;
+    background: rgba(23, 30, 138, 0.8);
+}
+
+#mycontactus a {
+    text-decoration: none;
+    color: white;
+}
+
+#myqrcode {
+    position: absolute;
+    width: 35%;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+@media only screen and (max-width: 991px) {
+    #myqrcode {
+        position: static;
+        width: 75%;
+        padding-top: 2em;
+    }
+}
+
+#mymapembed {
+    min-height: 35vh;
+}
+
+#certcarouselControls img {
+    margin: auto;
+}
+
+#mycust {
+    min-height: 65vh;
+}
+
+.mySwiper {
+    max-width: 50vh;
+}
+
+.swiper-wrapper {
+    align-items: center;
+    align-content: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
+
+#mytable .table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+
+#accordionExample * {
+    border: 0;
+}
+
+#bannerPlaceholder {
+    position: relative;
+    height: 50vh;
+}
+
+@media only screen and (max-width: 950px) {
+    #bannerPlaceholder {
+        height: 30vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #bannerPlaceholder {
+        height: 20vh;
+    }
+}
+
+#bannerPlaceholder p {
+    margin: 0;
+    padding: 0 1rem 0 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: end;
+    font-size: 2rem;
+    color: white;
+}
+
+@media only screen and (max-width: 950px) {
+    #bannerPlaceholder p {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #bannerPlaceholder p {
+        font-size: 1rem;
+    }
+}
+
+#h-laundry,#h-kitchen,#h-house {
+    display: none;
+    height: inherit;
+    width: inherit;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#h-laundry {
+    background-image: url('https://cdn.statically.io/gh/hdesign470/oxfordchem/main/assets/images/accordions/blaundry.jpg');
+    background-position: center center;
+}
+
+#h-kitchen {
+    background-image: url('https://cdn.statically.io/gh/hdesign470/oxfordchem/main/assets/images/accordions/bkitchen.jpg');
+    background-position: center bottom;
+}
+
+#h-house {
+    background-image: url('https://cdn.statically.io/gh/hdesign470/oxfordchem/main/assets/images/accordions/bhotel.jpg');
+    background-position: center 60%;
+}
+
+#myproductnav {
+    display: block;
+}
+
+@media only screen and (max-width: 950px) {
+    #mytable .table {
+        table-layout: fixed;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    #myproductnav * {
+        font-size: 0.8rem;
+    }
+}
+
+footer {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    footer {
+        font-size: 0.85rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        font-size: 0.75rem;
+    }
+}

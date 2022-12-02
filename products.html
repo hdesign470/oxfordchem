@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="OxfordChem Bintang Duta Bersaudara">
-    <meta name="keywords" content="OxfordChem, Cleaning, Chemical, Kitchen, Hygiene, Hotel, Laundry, Laundromat, Solution, Indonesia, Jakarta, sanitize, sanitation, sanitise">
+    <meta name="keywords"
+        content="OxfordChem, Cleaning, Chemical, Kitchen, Hygiene, Hotel, Laundry, Laundromat, Solution, Indonesia, Jakarta, sanitize, sanitation, sanitise">
     <meta name="color-scheme" content="light only">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="office.henri470@gmail.com - Henri">
@@ -25,7 +26,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css"
         integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.statically.io/gh/hdesign470/oxfordchem/main/mystyle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.statically.io/gh/hdesign470/oxfordchem/main/mystyle.min.css" /> -->
+    <link rel="stylesheet" href="mystyle-v2.css" />
+    <!-- Preloading banner -->
+    <link rel="preload" href="https://cdn.statically.io/gh/hdesign470/oxfordchem/main/assets/images/accordions/blaundry.jpg" as="image">
+    <link rel="preload" href="https://cdn.statically.io/gh/hdesign470/oxfordchem/main/assets/images/accordions/bkitchen.jpg" as="image">
+    <link rel="preload" href="https://cdn.statically.io/gh/hdesign470/oxfordchem/main/assets/images/accordions/bhotel.jpg" as="image">
     <!-- ////////////////////////////////// -->
     <!-- ////////  DESIGN BY HENRI //////// -->
     <!-- //// office.henri470@gmail.com /// -->
@@ -33,10 +39,12 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-dark bg-white clean-navbar navbar-expand-md fixed-top">
         <div class="container-fluid ms-md-5">
             <a class="navbar-brand d-inline-flex align-self-end" href="index.html">
-                <img src="https://cdn.statically.io/gh/hdesign470/oxfordchem/main/assets/logo/logo-new.png" alt="Logo" width="42" height="42" class="me-2">
+                <img src="https://cdn.statically.io/gh/hdesign470/oxfordchem/main/assets/logo/logo-new.png" alt="Logo"
+                    width="42" height="42" class="me-2">
                 <h1 class="text-black">
                     OXFORDCHEM
                 </h1>
@@ -66,57 +74,63 @@
             </ul>
         </div>
     </nav>
+
     <main>
-        <div id="accordion-image">
-            <div class="accordion accordion-flush" id="accordionExample2">
-                <div class="accordion-item">
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2">
-                        <div class="accordion-body m-0 p-0">
-                            <img src="https://cdn.statically.io/gh/hdesign470/oxfordchem/main/assets/images/accordions/bhotel.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
-                        <div class="accordion-body m-0 p-0">
-                            <img src="https://cdn.statically.io/gh/hdesign470/oxfordchem/main/assets/images/accordions/bkitchen.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
-                        <div class="accordion-body m-0 p-0">
-                            <img src="https://cdn.statically.io/gh/hdesign470/oxfordchem/main/assets/images/accordions/blaundry.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
+        <div id="bannerPlaceholder">
+            <h3>Loading banner....</h3>
+            <div id="h-house">
+                <p>
+                    <u><b>Housekeeping</b></u> <br>
+                    <small>our products are widely used for hotel and home</small>
+                </p>
+            </div>
+            <div id="h-kitchen">
+                <p>
+                    <u><b>Kitchen Steward</b></u> <br>
+                    <small>a clean and hygiene kitchen for you</small>
+                </p>
+            </div>
+            <div id="h-laundry">
+                <p>
+                    <u><b>Laundry</b></u> <br>
+                    <small>high quality solutions for your laundry needs</small>
+                </p>
             </div>
         </div>
+
         <div class="py-2 my-2 container" id="myproductnav">
             <div class="d-flex btn-group mx-2" role="group" aria-label="Basic radio toggle button group">
+
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked
                     data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                    aria-controls="collapseOne">
+                    aria-controls="collapseOne" onclick="funcHouse()">
                 <label class="btn btn-outline-primary d-flex justify-content-center" for="btnradio1">
                     <span class="d-none d-sm-flex align-items-center">Housekeeping</span>
                     <span class="d-flex d-sm-none align-items-center">House-keeping</span>
                 </label>
+
+
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"
                     data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                    aria-controls="collapseTwo">
+                    aria-controls="collapseTwo" onclick="funcKitchen()">
                 <label class="btn btn-outline-primary d-flex justify-content-center align-items-center" for="btnradio2">
                     Kitchen Steward</label>
+
+
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
                     data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                    aria-controls="collapseThree">
+                    aria-controls="collapseThree" onclick="funcLaundry()">
                 <label class="btn btn-outline-primary d-flex justify-content-center align-items-center" for="btnradio3">
                     Laundry</label>
                 <a href="https://cdn.statically.io/gh/hdesign470/oxfordchem/main/assets/userdownload/KATALOG_PRODUK.pdf"
                     class="btn btn-info text-wrap d-flex justify-content-center align-items-center">
                     Download Product Catalogue
                 </a>
+
+
             </div>
         </div>
+
         <div id="mytable">
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
@@ -487,6 +501,7 @@
             </div>
         </div>
     </main>
+
     <div class="container-fluid fixed-bottom bg-black text-white">
         <footer>
             <div class="row">
@@ -502,6 +517,28 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript">
+        var placeholder = document.getElementById('bannerPlaceholder');
+        var house = document.getElementById('h-house');
+        var kitchen = document.getElementById('h-kitchen');
+        var laundry = document.getElementById('h-laundry');
+        function funcHouse() {
+            placeholder.innerHTML = house.outerHTML;
+        }
+        function funcKitchen() {
+            placeholder.innerHTML = kitchen.outerHTML;
+        }
+        function funcLaundry() {
+            placeholder.innerHTML = laundry.outerHTML;
+        }
+        function funcInit() {
+            house.style.display = "block";
+            kitchen.style.display = "block";
+            laundry.style.display = "block";
+        }
+        funcInit();
+        funcHouse();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js"
         integrity="sha512-BOsvKbLb0dB1IVplOL9ptU1EYA+LuCKEluZWRUYG73hxqNBU85JBIBhPGwhQl7O633KtkjMv8lvxZcWP+N3V3w=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
